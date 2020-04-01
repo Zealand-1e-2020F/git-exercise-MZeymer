@@ -5,13 +5,14 @@ namespace GitExercise
         private string _navn;
         private string _adresse;
         private int _postnummer;
-
+        private string _by;
         #region Constructor
-        public myClass(string navn, string adresse, int postnummer)
+        public myClass(string navn, string adresse, int postnummer, string by)
         {
             _navn = navn;
             _adresse = adresse;       
             _postnummer = postnummer;
+            _by = by;
         }
         
         #endregion
@@ -30,6 +31,13 @@ namespace GitExercise
         get { return _postnummer; } 
         set { _postnummer = value; }
         }
+
+        public string By {
+        get { return _by; } 
+        set { _by = value; }
+        }
+
+        
 
         #endregion
 
